@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -23,8 +24,8 @@
             </nav>
             <div class="panel-inferior">
                 <div class="horario">
-                    <h1>Salon Masculino y Femenino</h1>
-                    <h2>Lunes 09hs a 15hs y Martes a Sábado ᴅᴇ 09ʜs ᴀ 20ʜs </h2>
+                    <h1 class="horario-descripcion">Salon Masculino y Femenino</h1>
+                    <h2 class="horario-descripcion">Lunes 09hs a 15hs y Martes a Sábado ᴅᴇ 09ʜs ᴀ 20ʜs </h2>
                 </div>
                 <div class="redes">
                     <div class="icono"><a class="icono-link" href="https://www.instagram.com/canda.barberia1958/" target="_blank"><i class="icono-icon bi-instagram"></i></div></a>
@@ -37,17 +38,60 @@
     </header>
 
     <main>
+        
         <section class="galeria-productos">
             <h1 class="titulo-contactanos">PRODUCTOS</h1>
             <div class="galeria-container">
-                <div class="galeria-foto"><img src="#" alt="imagen gel"><h2 class="descripcion-producto">GEL</h2></div>
-                <div class="galeria-foto"><img src="#" alt="imagen cera"><h2 class="descripcion-producto">CERA MATE</h2></div>
-                <div class="galeria-foto"><img src="#" alt="imagen cera"><h2 class="descripcion-producto">CERA BRILLOSA</h2></div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/gel.png" class="card-img-top" alt="gel">
+                    <div class="card-body">
+                      <h5 class="card-title">Gel</h5>
+                      <p class="card-text">Gel Modelador Para Peinar No Graso.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../img/ceramate.jpg" class="card-img-top" alt="cera mate">
+                    <div class="card-body">
+                      <h5 class="card-title">Cera Mate</h5>
+                      <p class="card-text">Pomada Mate Cera De Peinar Pelo Cabello.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../img/cerabrillante.jpg" class="card-img-top" alt="cera brillante">
+                    <div class="card-body">
+                      <h5 class="card-title">Cera Brillante</h5>
+                      <p class="card-text">Pomada Brillante Cera De Peinar Pelo Cabello.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
             </div>
             <div class="galeria-container">
-                <div class="galeria-foto"><img src="#" alt="imagen pomada"><h2 class="descripcion-producto">POMADA BARBA</h2></div>
-                <div class="galeria-foto"><img src="#" alt="imagen aceite"><h2 class="descripcion-producto">ACEITE BARBA</h2></div>
-                <div class="galeria-foto"><img src="#" alt="imagen polvo"><h2 class="descripcion-producto">POLVO TEXTURIZADO MATE</h2></div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/pomadabarba.jpg" class="card-img-top" alt="pomada barba">
+                    <div class="card-body">
+                      <h5 class="card-title">Pomada Barba</h5>
+                      <p class="card-text">Pomada Para Barba Antioxidante Restauradora.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../img/aceitebarba.jpg" class="card-img-top" alt="aceite barba">
+                    <div class="card-body">
+                      <h5 class="card-title">Aceite Barba</h5>
+                      <p class="card-text">Aceite Para Barba Antioxidante Restauradora.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="../img/polvotexturizado.png" class="card-img-top" alt="polvo texturizado">
+                    <div class="card-body">
+                      <h5 class="card-title">Polvo texturizado</h5>
+                      <p class="card-text">Texturizador Polvo Mate De Modelado Capilar.</p>
+                      <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
             </div>
         </section>
     </main>
@@ -64,6 +108,6 @@
         </nav>
         <p class="footer-text">© 2023 DIEGOJAVAZ.  All rights reserved.</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

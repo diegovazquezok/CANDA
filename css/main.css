@@ -92,6 +92,10 @@ ul.menu{
     flex-direction: column;
 }
 
+.horario-descripcion{
+    font-family: 'Abril Fatface', cursive;
+}
+
 
 
 .icono{
@@ -212,9 +216,9 @@ ul.menu{
 }
 
 .reserva-turnos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
 }
 
 .contenido-reserva{
@@ -313,4 +317,10 @@ ul.menu{
 .descripcion-producto{
     text-align: center;
     justify-content: center;
+}
+
+.card{
+    color: #c6ac8f;
+    background-color: #5e503f;
+    border: 2px solid #c6ac8f;
 }
