@@ -1,0 +1,18 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:center;
+    padding: 1rem 2rem;
+    color: #eae0d5;
+    background-color: #0a0908;
+    gap: 2rem;
+    border-bottom: 10px solid #0a0908;
+    .nav-inferior {
+        border-bottom: 3px solid #eae0d5;
+        .menu-link2 {
+            color: #eae0d5;
+        }
+    }
+}

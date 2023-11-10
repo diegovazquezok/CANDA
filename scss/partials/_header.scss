@@ -1,0 +1,76 @@
+.header {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    padding: 1rem 2rem;
+    color: $color-1;
+    background-color: $color-2;
+    gap: 2rem;
+    border-bottom: 10px solid $color-1;
+    .logo-canda{
+        width: 200px;
+        height: 200px;
+    }
+    .panel{
+        flex: 1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding: 1rem 1rem;
+            border-bottom: 3px solid $color-1;
+            .menu{
+                list-style-type: none;
+                display: flex;
+                align-items:end;
+                gap: 5rem;
+                ul.menu{
+                    float:left;
+                    padding-left:50px!important;
+                    font-size: 24px !important;
+                    .menu-link{
+                        color: $color-1;
+                    }
+                    .menu-item{
+                        transition: 1.5s;
+                    }
+                    .menu-item:hover{
+                        transform: scale(1.5);
+                    }                   
+                    .icono-link{
+                        color: $color-1;
+                    }
+                }
+            }
+        }
+        .panel-inferior{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-between;
+            .horario{
+                display: flex;
+                flex-direction: column;                
+                .horario-descripcion{
+                    font-family: 'Abril Fatface', cursive;
+                }
+            }
+            .redes {
+                display: flex;
+                justify-content: left;
+                align-items:end;
+                gap: 1rem;
+                .icono{
+                    width: 4rem;
+                    height: 4rem;
+                }               
+                .icono-icon {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}

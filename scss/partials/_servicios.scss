@@ -1,0 +1,59 @@
+.servicios{
+    color: #c6ac8f;
+    background-color: #5e503f;
+    border-bottom: 10px solid #0a0908;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5rem 15rem;
+    gap: 10rem;
+    .galeria-fotos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .swing-in-bottom-fwd {
+        -webkit-animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+                animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    }
+    
+     @-webkit-keyframes swing-in-bottom-fwd {
+        0% {
+          -webkit-transform: rotateX(100deg);
+                  transform: rotateX(100deg);
+          -webkit-transform-origin: bottom;
+                  transform-origin: bottom;
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+          -webkit-transform-origin: bottom;
+                  transform-origin: bottom;
+          opacity: 1;
+        }
+      }
+      @keyframes swing-in-bottom-fwd {
+        0% {
+          -webkit-transform: rotateX(100deg);
+                  transform: rotateX(100deg);
+          -webkit-transform-origin: bottom;
+                  transform-origin: bottom;
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+          -webkit-transform-origin: bottom;
+                  transform-origin: bottom;
+          opacity: 1;
+        }
+      }    
+    .servicios-info{
+        .titulo-servicios{
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            border-bottom: 5px solid #c6ac8f;
+        }
+    }
+}

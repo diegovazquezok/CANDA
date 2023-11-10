@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", cursive;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #0a0908;
+  background-color: #c6ac8f;
+  gap: 2rem;
+  border-bottom: 10px solid #0a0908;
+}
+.header .logo-canda {
+  width: 200px;
+  height: 200px;
+}
+.header .panel {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header .panel .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 1rem;
+  border-bottom: 3px solid #0a0908;
+}
+.header .panel .nav .menu {
+  list-style-type: none;
+  display: flex;
+  align-items: end;
+  gap: 5rem;
+}
+.header .panel .nav .menu ul.menu {
+  float: left;
+  padding-left: 50px !important;
+  font-size: 24px !important;
+}
+.header .panel .nav .menu ul.menu .menu-link {
+  color: #0a0908;
+}
+.header .panel .nav .menu ul.menu .menu-item {
+  transition: 1.5s;
+}
+.header .panel .nav .menu ul.menu .menu-item:hover {
+  transform: scale(1.5);
+}
+.header .panel .nav .menu ul.menu .icono-link {
+  color: #0a0908;
+}
+.header .panel .panel-inferior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header .panel .panel-inferior .horario {
+  display: flex;
+  flex-direction: column;
+}
+.header .panel .panel-inferior .horario .horario-descripcion {
+  font-family: "Abril Fatface", cursive;
+}
+.header .panel .panel-inferior .redes {
+  display: flex;
+  justify-content: left;
+  align-items: end;
+  gap: 1rem;
+}
+.header .panel .panel-inferior .redes .icono {
+  width: 4rem;
+  height: 4rem;
+}
+.header .panel .panel-inferior .redes .icono-icon {
+  font-size: 3rem;
+}
+
+.presentacion {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  border-bottom: 10px solid #0a0908;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5rem 15rem;
+  gap: 10rem;
+}
+.presentacion .titulo-presentacion {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.presentacion .presentacion-text {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.ubicacion {
+  color: #5e503f;
+  background-color: #eae0d5;
+  border-bottom: 10px solid #0a0908;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5rem 15rem;
+  gap: 10rem;
+}
+.ubicacion .titulo-ubicacion {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.ubicacion .ubicacion-text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.servicios {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  border-bottom: 10px solid #0a0908;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5rem 15rem;
+  gap: 10rem;
+}
+.servicios .galeria-fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.servicios .swing-in-bottom-fwd {
+  animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@keyframes swing-in-bottom-fwd {
+  0% {
+    transform: rotateX(100deg);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    transform-origin: bottom;
+    opacity: 1;
+  }
+}
+.servicios .servicios-info .titulo-servicios {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  border-bottom: 5px solid #c6ac8f;
+}
+
+.turnos {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  border-bottom: 10px solid #0a0908;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: normal;
+  padding: 5rem 15rem;
+  gap: 3rem;
+}
+.turnos .titulo-turnos {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.turnos .reserva-turnos {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+}
+.turnos .reserva-turnos .contenido-reserva {
+  display: flex;
+  flex-direction: column;
+}
+.turnos .reserva-turnos .contenido-reserva .titulo-reservas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.turnos .reserva-turnos .contenido-reserva .titulo-reservas .text-online {
+  color: #eae0d5;
+}
+.turnos .reserva-turnos .contenido-reserva .texto-reserva {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+.turnos .reserva-turnos .contenido-reserva .boton-reserva {
+  transition: 1.5s;
+}
+.turnos .reserva-turnos .contenido-reserva .boton-reserva .btn {
+  background-color: #0a0908;
+  color: #eae0d5;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+}
+.turnos .reserva-turnos .contenido-reserva .boton-reserva:hover {
+  transform: skew(20deg);
+}
+
+.contactanos {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: normal;
+  padding: 2rem 8rem;
+}
+.contactanos .titulo-contactanos {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.contactanos .pantalla-contacto {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5rem 10rem;
+  gap: 8rem;
+}
+.contactanos .pantalla-contacto .contenido-contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.contactanos .pantalla-contacto .redes .icono-icon2 {
+  font-size: 10rem;
+}
+
+.galeria-productos {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  padding-block: 3rem;
+  padding: 4rem 5rem;
+}
+.galeria-productos .galeria-container {
+  display: flex;
+  max-width: 1000px;
+  margin-inline: auto;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.galeria-productos .galeria-container .card {
+  color: #c6ac8f;
+  background-color: #5e503f;
+  border: 2px solid #c6ac8f;
+}
+.galeria-productos .galeria-container .card .card-body .btn-primary:hover {
+  transform: scale(1.5);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #eae0d5;
+  background-color: #0a0908;
+  gap: 2rem;
+  border-bottom: 10px solid #0a0908;
+}
+.footer .nav-inferior {
+  border-bottom: 3px solid #eae0d5;
+}
+.footer .nav-inferior .menu-link2 {
+  color: #eae0d5;
+}
+
+@media (max-width: 1120px) {
+  .h1, .h2 {
+    font-size: 20px;
+  }
+  .header .panel .nav .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: end;
+    gap: 3rem;
+  }
+  .header .panel .nav .menu ul.menu {
+    float: left !important;
+    padding-left: 30px !important;
+    font-size: 16px !important;
+  }
+  .header .panel .panel-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentacion {
+    border-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 5rem;
+  }
+  .presentacion .titulo-presentacion {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .presentacion .presentacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion {
+    border-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 5rem;
+  }
+  .ubicacion .titulo-ubicacion {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion .ubicacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .servicios {
+    border-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 5rem;
+  }
+  .servicios .galeria-fotos {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+  }
+  .servicios .servicios-info .titulo-servicios {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .turnos {
+    border-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 5rem;
+  }
+  .turnos .titulo-turnos {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .turnos .reserva-turnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactanos {
+    border-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 8rem;
+    gap: 5rem;
+  }
+  .contactanos .titulo-contactanos {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .contactanos .contenido-contactanos {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .galeria-productos .galeria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-inline: auto;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .h1, .h2 {
+    font-size: 16px;
+  }
+  .header .panel .nav .menu {
+    list-style-type: none;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+  }
+  .header .panel .nav .menu ul.menu {
+    float: left !important;
+    padding-left: 15px !important;
+    font-size: 14px !important;
+  }
+  .header .panel .panel-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentacion {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .presentacion .titulo-presentacion {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .presentacion .presentacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .presentacion .presentacion-img {
+    width: 150px;
+    height: 150px;
+  }
+  .ubicacion {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .ubicacion .titulo-ubicacion {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion .ubicacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion .ubicacion-img {
+    width: 150px;
+    height: 150px;
+  }
+  .servicios {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .servicios .galeria-fotos {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+  }
+  .servicios .servicios-info .titulo-servicios {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .turnos {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .turnos .titulo-turnos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .turnos .reserva-turnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactanos {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .contactanos .titulo-contactanos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .contactanos .contenido-contactanos {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .galeria-productos .galeria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin-inline: auto;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 460px) {
+  .h1, .h2 {
+    font-size: 12px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header .panel .nav .menu {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: center;
+  }
+  .header .panel .nav .menu ul.menu {
+    float: left !important;
+    padding-left: 10px !important;
+    font-size: 10px !important;
+  }
+  .header .panel .panel-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .panel .panel-inferior .icono {
+    width: 2rem;
+    height: 2rem;
+  }
+  .presentacion {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .presentacion .titulo-presentacion {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .presentacion .presentacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .presentacion .presentacion-img {
+    width: 150px;
+    height: 150px;
+  }
+  .ubicacion {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .ubicacion .titulo-ubicacion {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion .ubicacion-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .ubicacion .ubicacion-img {
+    width: 150px;
+    height: 150px;
+  }
+  .servicios {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .servicios .galeria-fotos {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    align-items: center;
+  }
+  .servicios .servicios-info .titulo-servicios {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .turnos {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .turnos .titulo-turnos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .turnos .reserva-turnos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .turnos .reserva-turnos .texto-reserva {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .turnos .reserva-turnos .boton-reserva .btn {
+    padding: 0.5rem 0.5rem;
+    font-weight: 300;
+  }
+  .contactanos {
+    border-bottom: 5px;
+    padding: 1rem 5rem;
+    gap: 3rem;
+  }
+  .contactanos .titulo-contactanos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .contactanos .contenido-contactanos {
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .contactanos .redes .icono-icon2 {
+    font-size: 1rem;
+  }
+  .galeria-productos .galeria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin-inline: auto;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer .footer-tex {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=estilos.css.map */

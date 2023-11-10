@@ -1,0 +1,24 @@
+
+.galeria-productos {
+    color: #c6ac8f;
+    background-color: #5e503f;
+    padding-block: 3rem;
+    padding: 4rem 5rem;
+    .galeria-container {
+        display: flex;
+        max-width: 1000px;
+        margin-inline: auto;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        .card{
+            color: #c6ac8f;
+            background-color: #5e503f;
+            border: 2px solid #c6ac8f;
+            .card-body{
+                .btn-primary:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}

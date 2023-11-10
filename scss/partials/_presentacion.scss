@@ -1,0 +1,18 @@
+.presentacion{
+    color: $color-2;
+    background-color: $color-3;
+    border-bottom: 10px solid $color-1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5rem 15rem;
+    gap: 10rem;
+    .titulo-presentacion{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }    
+    .presentacion-text {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}

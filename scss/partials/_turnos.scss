@@ -1,0 +1,49 @@
+
+.turnos{
+    color: #c6ac8f;
+    background-color: #5e503f;
+    border-bottom: 10px solid #0a0908;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:normal;
+    padding: 5rem 15rem;
+    gap: 3rem;
+    .titulo-turnos{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .reserva-turnos{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        align-items: center;
+        .contenido-reserva{
+            display: flex;
+            flex-direction: column;
+            .titulo-reservas{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                .text-online{
+                    color: #eae0d5;
+                }
+            }
+            .texto-reserva {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+            .boton-reserva{
+                transition: 1.5s;
+                .btn {
+                    background-color: #0a0908;
+                    color: #eae0d5;
+                    padding: .5rem 1.5rem;
+                    font-weight: 600;
+                }
+            }
+            .boton-reserva:hover{
+                transform: skew(20deg);
+            }
+        }
+    }
+}
