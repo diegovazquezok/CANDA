@@ -20,6 +20,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Abril Fatface', cursive;
 }
 
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    flex-grow: 1;
+}
 
 .header {
     display: flex;
@@ -52,6 +61,12 @@ ul.menu{
 
 .menu-link{
     color: #0a0908;
+}
+.menu-item{
+    transition: 1.5s;
+}
+.menu-item:hover{
+    transform: scale(1.5);
 }
 
 .icono-link{
@@ -325,6 +340,57 @@ ul.menu{
     border: 2px solid #c6ac8f;
 }
 
+.btn-primary:hover {
+    transform: scale(1.5);
+}
+
+.boton-reserva{
+    transition: 1.5s;
+}
+.boton-reserva:hover{
+    transform: skew(20deg);
+}
+
+.swing-in-bottom-fwd {
+	-webkit-animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-bottom-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+ @-webkit-keyframes swing-in-bottom-fwd {
+    0% {
+      -webkit-transform: rotateX(100deg);
+              transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-bottom-fwd {
+    0% {
+      -webkit-transform: rotateX(100deg);
+              transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+  }
+  
+
+
 @media (max-width: 1120px){
     .h1, .h2{
         font-size: 20px;
@@ -346,7 +412,7 @@ ul.menu{
         flex-direction: column;
         align-items:center;
     }
-    .presentacion, .servicios{
+    .presentacion, .servicios, .turnos, .contactanos, .pantalla-contacto, .galeria-productos{
         border-bottom: 5px solid #0a0908;
         display: flex;
         flex-direction: column;
@@ -355,7 +421,7 @@ ul.menu{
         gap: 5rem;
     }
     
-    .titulo-presentacion, .titulo-servicios{
+    .titulo-presentacion, .titulo-servicios, .titulo-contactanos, .titulo-reservas, .titulo-turnos{
         font-size: 2rem;
         margin-bottom: 1rem;
     }
@@ -387,6 +453,24 @@ ul.menu{
         grid-template-columns: 3fr 3fr 3fr;
         align-items: center;
     }
+    .reserva-turnos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-contactanos{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;     
+    }
+    .galeria-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin-inline: auto;
+        gap: 2rem;
+        margin-bottom: 2rem
+    }
 }
 
 @media (max-width: 700px){
@@ -410,13 +494,13 @@ ul.menu{
         flex-direction: column;
         align-items:center;
     }
-    .presentacion, .servicios{
+    .presentacion, .servicios, .turnos, .contactanos, .pantalla-contacto, .galeria-productos{
         border-bottom: 5px solid #0a0908;
         padding: 1rem 5rem;
         gap: 3rem;
     }
     
-    .titulo-presentacion, .titulo-servicios{
+    .titulo-presentacion, .titulo-servicios, .titulo-contactanos, .titulo-reservas, .titulo-turnos{
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
@@ -454,6 +538,24 @@ ul.menu{
         width: 150px;
         height: 150px;
     }
+    .galeria-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+        margin-inline: auto;
+        gap: 2rem;
+        margin-bottom: 2rem
+    }
+    .reserva-turnos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-contactanos{
+        font-size: 1rem;
+        margin-bottom: 0.5rem;     
+    }
 }
 
 @media (max-width: 460px){
@@ -488,13 +590,13 @@ ul.menu{
         width: 2rem;
         height: 2rem;
     }
-    .presentacion, .servicios{
+    .presentacion, .servicios, .turnos, .contactanos, .pantalla-contacto, .reserva-turnos{
         border-bottom: 5px solid #0a0908;
         padding: 1rem 5rem;
         gap: 3rem;
     }
     
-    .titulo-presentacion, .titulo-servicios{
+    .titulo-presentacion, .titulo-servicios, .titulo-contactanos, .titulo-servicios, .titulo-reservas{
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
@@ -532,5 +634,38 @@ ul.menu{
     .footer-text{
         font-size: 0.5rem;
         margin-bottom: 0.5rem;        
+    }
+
+    .galeria-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        margin-inline: auto;
+        gap: 2rem;
+        margin-bottom: 2rem
+    }
+    .reserva-turnos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-reserva {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: .5rem .5rem;
+        font-weight: 300;
+    }
+
+    .contenido-contactanos{
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;     
+    }
+    .icono-icon2 {
+        font-size: 1rem;
     }
 }
